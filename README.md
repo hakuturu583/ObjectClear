@@ -125,6 +125,12 @@ python inference_objectclear.py -i inputs/imgs -m inputs/masks --guidance_scale 
 > The default setting is `--guidance_scale 2.5`. For all [benchmark results](https://drive.google.com/drive/folders/1eUbIz5OS9yK6Ih8Y1qXoXuk_UWOcifcY?usp=sharing) reported in our paper, we used `--guidance_scale 1.0`.
 
 
+### 📊 Evaluation with ReMOVE+
+Our **ReMOVE+** metric addresses the limitations of the original ReMOVE by assessing consistency between the output's object-effect region and the input's background (outside the object-effect mask), making it more suitable for object-effect removal evaluation.
+
+Please refer to the detailed instructions in the [`evaluation/README.md`](./evaluation/README.md) file for installation, setup, and running the ReMOVE+ evaluation pipeline.
+
+
 
 ## 🪄 Interactive Demo
 To get rid of the preparation for segmentation mask, we prepare a gradio demo on [hugging face](https://huggingface.co/spaces/jixin0101/ObjectClear) and could also [launch locally](./hugging_face). Just drop your image, assign the target masks with a few clicks, and get the object removal results!
