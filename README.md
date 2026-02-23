@@ -11,6 +11,10 @@
     <a href='https://shangchenzhou.com/' target='_blank'>Shangchen Zhou<sup>*,†</sup>
 </div>
 <div>
+    S-Lab, Nanyang Technological University&emsp; 
+</div>
+
+<div>
     <strong>CVPR 2026 </strong>
 </div>
 
