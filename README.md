@@ -1,19 +1,17 @@
 <div align="center">
 <div style="text-align: center;">
     <img src="./assets/ObjectClear_logo.png" alt="ObjectClear Logo" style="height: 52px;">
-    <h2>Complete Object Removal via Object-Effect Attention</h2>
+    <h2>Precise Object and Effect Removal with Adaptive Target-Aware Attention</h2>
 </div>
 
 <div>
-    <a href="https://zjx0101.github.io/" target='_blank'>Jixin Zhao</a>&emsp;
-    <a href='https://shangchenzhou.com/' target='_blank'>Shangchen Zhou<sup>†</sup></a>&emsp;
+    <a href="https://zjx0101.github.io/" target='_blank'>Jixin Zhao<sup>*</sup></a>&emsp;
     <a href='https://wzhouxiff.github.io' target='_blank'>Zhouxia Wang</a>&emsp;
     <a href='https://pq-yang.github.io/' target='_blank'>Peiqing Yang</a>&emsp;
-    <a href='https://www.mmlab-ntu.com/person/ccloy/' target='_blank'>Chen Change Loy</a>
+    <a href='https://shangchenzhou.com/' target='_blank'>Shangchen Zhou<sup>*,†</sup>
 </div>
 <div>
-    S-Lab, Nanyang Technological University<br>
-   <p><sup>†</sup>Corresponding author</p>
+    <strong>CVPR 2026 </strong>
 </div>
 
 
@@ -28,6 +26,9 @@
         <a href="https://huggingface.co/spaces/jixin0101/ObjectClear" target='_blank'>
         <img src="https://img.shields.io/badge/Demo-%F0%9F%A4%97%20Hugging%20Face-blue">
         </a>
+        <a href="https://huggingface.co/datasets/sczhou/OBERDataset_ObjectClear" target='_blank'>
+        <img src="https://img.shields.io/badge/Dataset-%F0%9F%A7%B8%20OBER-blue">
+        </a>
         <img src="https://api.infinitescript.com/badgen/count?name=sczhou/ObjectClear&ltext=Visitors&color=3977dd">
     </h4>
 </div>
@@ -35,7 +36,7 @@
 <strong>ObjectClear is an object removal model that can jointly eliminate the target object and its associated effects leveraging Object-Effect Attention, while preserving background consistency.</strong>
 
 <div style="width: 100%; text-align: center; margin:auto;">
-    <img style="width:100%" src="assets/teaser.jpg">
+    <img style="width:100%" src="assets/teaser.png">
 </div>
 
 For more visual results, go checkout our <a href="https://zjx0101.github.io/projects/ObjectClear/" target="_blank">project page</a>
@@ -43,17 +44,15 @@ For more visual results, go checkout our <a href="https://zjx0101.github.io/proj
 ---
 </div>
 
-### 🔔 Dataset Release Plan 
-**Thank you all for your interest in our dataset!** As the work is currently under review, we will not be releasing the datasets at this stage. We plan to make it publicly available once the paper is accepted. Please stay tuned for further updates! 🙂
 
 ## ⭐ Update
+- [2026.02] **🔥 OBER Dataset is Now Released!** Our training dataset is now publicly available on [Hugging Face](https://huggingface.co/datasets/sczhou/OBERDataset_ObjectClear) 🤗.
 - [2025.09] We have released our [benchmark datasets](https://drive.google.com/drive/folders/12LA53ZPAG1uxdVXsn90L2qe6zCcp6aGF?usp=sharing) for evaluation, along with [our results](https://drive.google.com/drive/folders/1eUbIz5OS9yK6Ih8Y1qXoXuk_UWOcifcY?usp=sharing) to facilitate comparison.
 - [2025.07] Release the inference code and Gradio demo.
 - [2025.05] This repo is created.
 
 ### ✅ TODO
-- [ ] Release our training datasets
-- [ ] Adapt to ComfyUI
+- [x] Release our training datasets
 - [x] Release our benchmark datasets
 - [x] ~~Release the inference code and Gradio demo~~
 
@@ -65,9 +64,14 @@ For more visual results, go checkout our <a href="https://zjx0101.github.io/proj
 ## 📷 OBER Dataset
 ![OBER_dataset_pipeline](assets/OBER_pipeline.png)
 
-OBER (OBject-Effect Removal) is a hybrid dataset designed to support research in object removal with effects, combining both camera-captured and simulated data.
+OBER (OBject-Effect Removal) is a hybrid dataset designed to support research in object removal with effects, combining both camera-captured and simulated data. 
+
+🔥 We have released the full dataset [OBERDataset_ObjectClear](https://huggingface.co/datasets/sczhou/OBERDataset_ObjectClear ) on Hugging Face. We hope it can serve as a strong training resource and benchmarkfor future object removal research.
+
+> 🚩 Note that the OBER dataset are made available solely for **non-commercial** research use. Any use, reproduction, or redistribution must strictly comply with the terms of <a rel="license" href="./LICENSE">NTU S-Lab License 1.0</a>.
 
 ![OBER_dataset_samples](assets/dataset_samples.png)
+
 
 
 ## ⚙️ Installation
@@ -130,22 +134,30 @@ pip3 install -r requirements.txt
 python app.py
 ```
 
+<p align="center">
+  <img src="assets/user_clicks.gif" width="49%" />
+  <img src="assets/user_strokes.gif" width="49%" />
+</p>
+
+
+## 📝 License
+**Non-Commercial Use Only Declaration**
+
+The ObjectClear is made available for use, reproduction, and distribution strictly for non-commercial purposes. The code, models, and datasets are licensed under <a rel="license" href="./LICENSE">NTU S-Lab License 1.0</a>. Redistribution and use should follow this license.
+
+
 
 ## 📑 Citation
 If you find our repo useful for your research, please consider citing our paper:
 
 ```bibtex
-@InProceedings{zhao2025ObjectClear,
-    title     = {{ObjectClear}: Complete Object Removal via Object-Effect Attention},
-    author    = {Zhao, Jixin and Zhou, Shangchen and Wang, Zhouxia and Yang, Peiqing and Loy, Chen Change},
-    booktitle = {arXiv preprint arXiv:2505.22636},
-    year      = {2025}
+@InProceedings{zhao2026objectclear,
+    title   = {Precise Object and Effect Removal with Adaptive Target-Aware Attention},
+    author  = {Zhao, Jixin and Wang, Zhouxia and Yang, Peiqing and Zhou, Shangchen},
+    booktitle = {CVPR},
+    year    = {2026},
     }
 ```
 
-## 📝 License
-The ObjectClear is made available for use, reproduction, and distribution strictly for non-commercial purposes. The code, models, and datasets are licensed under <a rel="license" href="./LICENSE">NTU S-Lab License 1.0</a>. Redistribution and use should follow this license.
-
-
 ## 📧 Contact
-If you have any questions, please feel free to reach us at `jixinzhao0101@gmail.com`. 
+If you have any questions, please feel free to reach us at `jixinzhao0101@gmail.com` and `shangchenzhou@gmail.com`. 
