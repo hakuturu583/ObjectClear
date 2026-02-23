@@ -70,7 +70,7 @@ For more visual results, go checkout our <a href="https://zjx0101.github.io/proj
 
 OBER (OBject-Effect Removal) is a hybrid dataset designed to support research in object removal with effects, combining both camera-captured and simulated data. 
 
-🔥 We have released the full dataset [OBERDataset_ObjectClear](https://huggingface.co/datasets/sczhou/OBERDataset_ObjectClear ) on Hugging Face. We hope it can serve as a strong training resource and benchmarkfor future object removal research.
+🔥 We have released the full dataset [OBERDataset_ObjectClear](https://huggingface.co/datasets/sczhou/OBERDataset_ObjectClear ) on Hugging Face. We hope it can serve as a strong training resource and benchmark for future object removal research.
 
 > 🚩 Note that the OBER dataset are made available solely for **non-commercial** research use. Any use, reproduction, or redistribution must strictly comply with the terms of <a rel="license" href="./LICENSE">NTU S-Lab License 1.0</a>.
 
