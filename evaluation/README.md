@@ -41,6 +41,6 @@ cd ..
 python remove_plus.py \
   -ind OBER-Wild inputs \
   -rd OBER-Wild model results \
-  -md OBER-Wild object-effect-mask \
+  -md OBER-Wild object-effect masks \
   --save_csv [your_save_path]/evaluation_results.csv
 ```
