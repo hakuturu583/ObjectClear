@@ -1,6 +1,6 @@
 # Evaluation for ReMOVE+
 
-*ReMOVE+* is a modified reference-free metric designed to address critical limitations of the original *ReMOVE* metric in object-effect removal tasks: the original ReMOVE only judges whether the object erasure region of the output result is harmonious with the output background (leading to high scores even when the background is severely altered) and cannot effectively evaluate the removal of object effects. To solve these issues, ReMOVE+ assesses removal success by measuring the consistency between the object-effect region of the output result and the area outside the object-effect region of the input image, making it suitable for OBER-Wild dataset evaluation.
+**ReMOVE+** is a modified reference-free metric designed to address critical limitations of the original ReMOVE metric in object-effect removal tasks: the original ReMOVE only judges whether the object erasure region of the output result is harmonious with the output background (leading to high scores even when the background is severely altered) and cannot effectively evaluate the removal of object effects. To solve these issues, ReMOVE+ assesses removal success by measuring the consistency between the object-effect region of the output result and the area outside the object-effect region of the input image, making it suitable for OBER-Wild dataset evaluation.
 
 ## 1. Clone the Base Repository
 First, clone the official ReMOVE repository and set up the base environment:
