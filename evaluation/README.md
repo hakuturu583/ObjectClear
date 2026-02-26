@@ -21,8 +21,6 @@ cd ReMOVE
 ## 3. Download Pre-trained Model
 Download the ViT-H model (used by default in ReMOVE):
 ```bash
-# Create models directory if not exists
-mkdir -p models
 # Download model using the url in models/url.txt
 wget -i models/url.txt -P models/
 ```
@@ -39,8 +37,8 @@ cd ..
 #### Basic Command
 ```bash
 python remove_plus.py \
-  -ind OBER-Wild inputs \
-  -rd OBER-Wild model results \
+  -ind OBER-Wild input imgs \
+  -rd model output results \
   -md OBER-Wild object-effect masks \
   --save_csv [your_save_path]/evaluation_results.csv
 ```
