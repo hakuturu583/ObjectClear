@@ -1,0 +1,21 @@
+[project]
+name = "objectclear"
+version = "0.1.0"
+description = "ObjectClear: Object Removal via Diffusion"
+requires-python = ">=3.10"
+dependencies = [
+    "accelerate",
+    "numpy",
+    "opencv-python",
+    "pillow",
+    "transformers",
+    "scipy",
+    "diffusers",
+]
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.backends.legacy:build"
+
+[tool.setuptools.packages.find]
+include = ["objectclear*"]
